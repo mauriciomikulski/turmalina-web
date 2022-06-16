@@ -1,0 +1,32 @@
+.conditions {
+  display: flex;
+  background-color: #182024;  
+}
+
+.conditions_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px 20px;
+  list-style: none;
+  color: #fff;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conditions-title {
+  font-family: "Inika", serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.conditions-description {
+  font-family: "IBM Plex Sans", serif;
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
