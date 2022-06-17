@@ -2,7 +2,6 @@
   display: flex;
   position: relative;
   align-items: center;
-  width: 358px;
 }
 
 .input-box {
@@ -14,7 +13,6 @@
   padding: 0 10px;
   font-size: 14px;
   outline: none;
-  transition: all 0.3s ease-in-out;
 }
 
 .search-button {
@@ -31,24 +29,4 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   font-size: calc(10px + 2vmin);
-}
-
-@media (max-width: 768px) {
-  .search-input {
-    width: 100%;
-    display: flex;
-    position: relative;
-    align-items: center;
-  }
-
-  .input-box {
-    width: 250px;
-  }
-
-  .search-button {
-    position: absolute;
-    right: 258px;
-    top: 20%;
-    transform: translateY(0);
-  }
 }

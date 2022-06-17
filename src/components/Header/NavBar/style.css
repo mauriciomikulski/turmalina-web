@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 823px;
-  margin: 0 auto;
 }
 
 .nav-up {
@@ -10,8 +9,7 @@
   flex-direction: row;  
   justify-content: space-between;
   align-items: center;
-  height: 75px;
-  padding: 15px 50px;
+  padding: 10px 30px;
   
 }
 
@@ -52,30 +50,19 @@
   cursor: pointer;
 }
 
-.nav-down ul li:hover {
+.nav-down ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-down ul li a:hover {
   color: #A672A2;
   text-decoration: underline;
 }
 
-.nav-down ul li:active {
+.nav-down ul li a:active {
   color: #A672A2;
   text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
-  .nav-up {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 0;
-  }
-  .profile {
-    font-size: 20px;
-  }
-
-  .cart {
-    font-size: 20px;
-  }
-  
-}
 

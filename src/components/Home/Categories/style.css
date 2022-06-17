@@ -1,0 +1,36 @@
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.categories .categories__item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 255px;
+  height: 255px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.categories .categories__item:hover {  
+  transform: scale(0.97);
+  transition: all 0.3s;  
+}
+
+.categorie_title {
+  position: absolute;
+  font-family: 'Jockey One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 10px;
+  line-height: 28px;
+  letter-spacing: 0.18em;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}

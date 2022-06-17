@@ -1,14 +1,15 @@
 .conditions {
-  display: flex;
-  background-color: #182024;  
+  background-color: #182024;
+  margin-top: 20px;
 }
 
 .conditions_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px 20px;
+  grid-gap: 20px;
   list-style: none;
   color: #fff;
+  padding: 0 10px;
 }
 
 .center {
@@ -18,15 +19,21 @@
 }
 
 .conditions-title {
-  font-family: "Inika", serif;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
-  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 0.205em;
+  mix-blend-mode: normal;
 }
 
 .conditions-description {
-  font-family: "IBM Plex Sans", serif;
-  font-size: 13px;
-  font-weight: 100;
-  line-height: 1.5;
-  text-transform: capitalize;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.065em;
 }
