@@ -1,4 +1,4 @@
-import './style.css'
+import './style.scss'
 import { BsSearch } from 'react-icons/bs';
 
 const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {

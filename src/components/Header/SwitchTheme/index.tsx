@@ -1,4 +1,4 @@
-import './style.css';
+import './style.scss';
 import {ReactSwitchProps} from 'react-switch';
 
 const SwitchTheme = () => {

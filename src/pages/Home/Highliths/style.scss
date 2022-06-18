@@ -1,0 +1,80 @@
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--margin-20);
+}
+
+.highlights .highlights_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: var(--border-radius-3);
+  background-color: var(--border-color-tertiary);
+  width: 260px;
+  color: var(--text-color);
+}
+
+.highlights .highlights_item img {
+  padding: var(--padding-13) var(--padding-13);
+}
+
+.highlights .highlights_item .highlights_title {
+  font-family: var(--font-family-ibm-plex);
+  font-style: normal;
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-13);
+  line-height: var(--line-height-17);
+  letter-spacing: var(--letter-spacing-17);
+  color: var(--text-color);
+  padding: 0px var(--padding-30);
+  margin-top: var(--margin-10);
+}
+
+.highlights_separator {
+  width: 204px;
+  height: 1px;
+  background-color: var(--border-color-secondary);
+  margin: 20px 28px;
+}
+
+.highlights .highlights_item .highlights_oldprice {
+  font-family: var(--font-family-ibm-plex);
+  font-style: normal;
+  font-weight: var(--font-weight-300);
+  font-size: var(--font-size-14);
+  line-height: var(--line-height-18);
+  letter-spacing: var(--letter-spacing-07);
+  text-decoration-line: line-through;
+  padding: 0px 30px;
+}
+
+.highlights .highlights_item .highlights_price {
+  font-family: var(--font-family-ibm-plex);
+  font-style: normal;
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-15);
+  line-height: var(--line-height-20);
+  letter-spacing: var(--letter-spacing-07);
+  padding: 0px 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 475px) {
+  .highlights {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+  }
+  .highlights .highlights_item {
+    width: 190px;
+  }
+  .highlights .highlights_item .highlights_title {
+    font-size: var(--font-size-12);
+  }
+  .highlights_separator {
+    width: calc(100% - var(--padding-30));
+    margin: 20px 15px;
+  }
+}

@@ -1,0 +1,105 @@
+.collection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: var(--border-width-1) solid var(--border-color-secondary);
+  margin-top: var(--margin-20);
+}
+
+.collection .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-20);
+}
+
+.collection .collection_title {
+  font-family: var(--font-family-inika);
+  font-style: normal;
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-20);
+  line-height: var(--line-height-26);
+  letter-spacing: var(--letter-spacing-18);
+  color: var(--text-color);
+}
+
+.collection .collection_description {
+  font-family: var(--font-family-ibm-plex);
+  font-style: normal;
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-12);
+  line-height: --line-height-16;
+  text-align: center;
+  letter-spacing: var(--letter-spacing-18);
+  color: var(--text-color);
+}
+
+.collection .collection_button {
+  font-family: var(--font-family-inika);
+  font-style: normal;
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-12);
+  line-height: var(--line-height-16);
+  text-align: center;
+  letter-spacing: 0.18em;
+  color: #FFFFFF;
+  border: 1px solid var(--border-color-tertiary);
+  background: var(--border-color-tertiary);
+  border-radius: var(--border-radius-3);
+  padding: 10px;
+  margin-top: 20px;
+  width: 218px;
+  height: 38px;
+  cursor: pointer;
+}
+
+.collection img {
+  width: 482px;
+  height: 268px;
+  padding: 10px;
+}
+
+// Mobile \\
+@media (max-width: 475px) { 
+  .collection {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    border: var(--border-width-1) solid var(--border-color-secondary);
+    margin-top: var(--margin-20);
+  }
+  
+  .collection .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding-20);
+  }
+  
+  .collection .collection_description {
+    padding: 0px 250px;
+    font-family: var(--font-family-ibm-plex);
+    font-style: normal;
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-12);
+    line-height: var(--line-height-16);
+    text-align: center;
+    letter-spacing: var(--letter-spacing-18);
+    color: var(--text-color);
+  }
+  
+  .collection .collection_button {
+    padding: 10px;
+    margin-top: 20px;
+    width: 218px;
+    height: 38px;
+    cursor: pointer;
+  }
+  
+  .collection img {
+    width: 43vh;
+    height: 21vh;
+    margin:auto;
+  } 
+}

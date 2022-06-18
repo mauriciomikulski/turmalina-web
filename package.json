@@ -9,11 +9,15 @@
   },
   "dependencies": {
     "@types/react-icons": "^3.0.0",
+    "@types/sass": "^1.43.1",
+    "better-react-carousel": "^1.1.1",
+    "flat-carousel": "^0.0.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",
-    "react-switch": "^7.0.0"
+    "react-switch": "^7.0.0",
+    "sass": "^1.52.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

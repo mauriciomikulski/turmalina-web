@@ -1,4 +1,4 @@
-import './style.css';
+import './style.scss';
 import products from '../../../assets/img/products';
 const Highliths = () => {
   return (

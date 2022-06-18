@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route,  } from 'react-router-dom'
-import Contact from '../components/Contact'
-import Home from '../components/Home'
+import Contact from '../pages/Contact'
+import Home from '../pages/Home'
 
 const Routers = () => {
   return (

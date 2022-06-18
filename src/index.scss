@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=IBM+Plex+Sans:wght@100;300;400&family=Inika&family=Jockey+One&display=swap');
+
+:root {
+  //Screens\\
+  --breakpoint: 1200px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-mobile: 375px;
+  --breakpoint-mobile-small: 320px;
+
+  //Colors\\
+  --primary-color: #A672A2;
+  --secondary-color: #B59FBF;
+  --background-color: #323A3C;
+  --background-color-dark: #182024;
+  --text-color: #fff;
+  --text-color-gray: #BEBEBE;
+
+  //Fonts\\
+  --font-family-hindi: 'Hind', sans-serif;
+  --font-family-ibm-plex: 'IBM Plex Sans', sans-serif;
+  --font-family-inika: 'Inika', serif;
+  --font-family-jockey: 'Jockey One', sans-serif;
+
+  //Font sizes\\
+  --font-size-9: 9px;
+  --font-size-10: 10px;
+  --font-size-11: 11px;
+  --font-size-12: 12px;
+  --font-size-13: 13px;
+  --font-size-14: 14px;
+  --font-size-15: 15px;
+  --font-size-16: 16px;
+  --font-size-17: 17px;
+  --font-size-18: 18px;
+  --font-size-19: 19px;
+  --font-size-20: 20px;
+  --font-size-21: 21px;
+  --font-size-22: 22px;
+  --font-size-23: 23px;
+  --font-size-24: 24px;
+  --font-size-25: 25px;
+  --font-size-31: 31px;
+
+  //Font heights\\
+  --font-weight-400: 400;
+  --font-weight-300: 300;
+  --font-weight-100: 100;
+
+  //Line height\\
+  --line-height-16: 16px;
+  --line-height-17: 17px;
+  --line-height-18: 18px;
+  --line-height-20: 20px;
+  --line-height-22: 22px;
+  --line-height-24: 24px;
+  --line-height-26: 26px;
+  --line-height-28: 28px;
+
+  //Letter spacing\\
+  --letter-spacing-07: 0.07em;
+  --letter-spacing-08: 0.08em;
+  --letter-spacing-09: 0.09em;
+  --letter-spacing-10: 0.10em;
+  --letter-spacing-18: 0.18em;
+
+  //Box\\
+  --border-radius-5: 5px;
+  --border-radius-3: 3px;
+
+  //Shadows\\
+  --box-shadow-1: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  --box-shadow-2: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  --box-shadow-3: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  --box-shadow-4: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+
+  //Border color\\
+  --border-color-primary: #858585;
+  --border-color-secondary: #4D4A4A;
+  --border-color-tertiary: #212121;
+  --border-color-quaternary: #4D4A4A;
+
+  //Border width\\
+  --border-width-1: 1px;
+  --border-width-2: 2px;
+  --border-width-3: 3px;
+  --border-width-4: 4px;
+  --border-width-5: 5px;
+  
+  //Anumations\\
+  --transition-primary: 0.3s ease-out all;
+  --transition-secondary: 0.3s ease-out all;
+
+  //Z-index\\
+  --z-index-1: 1;
+  --z-index-2: 2;
+  --z-index-3: 3;
+  --z-index-4: 4;
+
+  //Widths\\
+  --width-100: 100%;
+  --width-50: 50%;
+  --width-33: 33%;
+  --width-25: 25%;
+  --width-20: 20%;
+
+  --height-100: 100%;
+  --height-50: 50%;
+  --height-33: 33%;
+  --height-25: 25%;
+  --height-20: 20%;
+
+  //Paddings\\
+  --padding-5: 5px;
+  --padding-10: 10px;
+  --padding-13: 13px;
+  --padding-15: 15px;
+  --padding-20: 20px;
+  --padding-25: 25px;
+  --padding-30: 30px;
+
+  //Margins\\
+  --margin-5: 5px;
+  --margin-10: 10px;
+  --margin-15: 15px;
+  --margin-20: 20px;
+
+  //Columns\\
+  --column-count-1: 1;
+  --column-count-2: 2;
+  --column-count-3: 3;
+  --column-count-4: 4;
+  --column-count-5: 5;
+  --column-count-6: 6;
+  --column-count-7: 7;
+  --column-count-8: 8;
+  --column-count-9: 9;
+  --column-count-10: 10;
+
+  --column-gap-1: 1px;
+  --column-gap-2: 2px;
+  --column-gap-3: 3px;
+  --column-gap-4: 4px;
+  --column-gap-5: 5px;
+  --column-gap-6: 6px;
+  --column-gap-7: 7px;
+  --column-gap-8: 8px;
+  --column-gap-9: 9px;
+
+}
+
+body {
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

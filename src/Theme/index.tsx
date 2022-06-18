@@ -15,11 +15,11 @@ const Theme = () => {
   // }
 
   return (
-    <div>
+    <>
       <Header />
       <Routers />
       <Footer />      
-    </div>
+    </>
   );
 }
 

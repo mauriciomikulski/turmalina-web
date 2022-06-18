@@ -1,14 +1,19 @@
-export const socials = {
-  Facebook: {
-    name: "Facebook",
-    link: "https://www.facebook.com/",
+import { GrFacebook, GrInstagram, GrYoutube } from 'react-icons/gr'
+export const socials = [
+  {
+    name: 'facebook',
+    url: 'https://www.facebook.com/',
+    icon: GrFacebook,
   },
-  Instagram: {
-    name: "Instagram",
-    link: "https://www.instagram.com/",
+  {
+    name: 'instagram',
+    url: 'https://www.instagram.com/',
+    icon: GrInstagram,
   },
-  Youtube: {
-    name: "Youtube",
-    link: "https://www.youtube.com/",
-  }
-}
+  {
+    name: 'youtube',
+    url: 'https://www.youtube.com/',
+    icon: GrYoutube,
+  },
+  
+]

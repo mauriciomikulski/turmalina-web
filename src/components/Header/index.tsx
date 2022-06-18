@@ -1,3 +1,4 @@
+import './style.scss';
 import NavBar from "./NavBar";
 
 const Header: React.FC = () => {

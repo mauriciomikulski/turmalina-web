@@ -1,4 +1,4 @@
-import './style.css'
+import './style.scss'
 import banner from '../../../assets/img/banners';
 import { useEffect, useState } from 'react';
 
@@ -26,8 +26,9 @@ const Banner = () => {
   }, [bannerImg]);
 
   return (
+    
     <div className="banner">
-      <img width={823} height={300} src={bannerImg} />
+      <img src={bannerImg} />
       <ul className="dotItem">
         {banner.map((item, index) => {
           return (
@@ -35,6 +36,7 @@ const Banner = () => {
           )
         }
         )}
+        
       </ul>
     </div>
   );
