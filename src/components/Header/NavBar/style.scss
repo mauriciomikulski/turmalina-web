@@ -163,3 +163,9 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 395px) {
+  .active {
+    transform: translateY(-35vh) !important;
+  }
+}
