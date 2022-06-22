@@ -160,15 +160,6 @@
     font-size: var(--font-size-20);
   }
   
-  .footer-up-social a {
-    color: var(--text-color);
-    padding-right: 10px;
-  }
-  
-  .footer-up-social a:hover {
-    color: var(--primary-color);
-  }
-  
   .footer-down {
     display: grid;
     grid-template-columns: 1fr;
@@ -177,12 +168,11 @@
   }
   
   .copyright {  
-    font-family: var(--font-family-hindi);
-    font-weight: var(--font-weight-400);
-    font-size: var(--font-size-12);
-    letter-spacing: var(--letter-spacing-07);
-    color: var(--text-color);
     text-align: center;
     padding: 0px 50px;
   }
+}
+
+@media (max-width: 395px) {
+
 }

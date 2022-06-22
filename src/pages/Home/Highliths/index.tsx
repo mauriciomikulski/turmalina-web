@@ -1,29 +1,20 @@
 import './style.scss';
 import products from '../../../assets/img/products';
+import { HighlithsCard } from './HighligthCard';
+
 const Highliths = () => {
   return (
     <div className="highlights">
-      <div className="highlights_item">
-        <img src={products[0]} alt="icon" />
-        <span className="highlights_title">Colar Smiley Rosa</span>
-        <span className="highlights_separator"></span>
-        <span className="highlights_oldprice">R$ 450,00</span>
-        <span className="highlights_price">R$ 315,00 <br/> 3x R$ 105,00 sem juros</span>
-      </div>
-      <div className="highlights_item">
-        <img src={products[0]} alt="icon" />
-        <span className="highlights_title">Colar Smiley Rosa</span>
-        <span className="highlights_separator"></span>
-        <span className="highlights_oldprice">R$ 450,00</span>
-        <span className="highlights_price">R$ 315,00 <br/> 3x R$ 105,00 sem juros</span>
-      </div>
-      <div className="highlights_item">
-        <img src={products[0]} alt="icon" />
-        <span className="highlights_title">Colar Smiley Rosa</span>
-        <span className="highlights_separator"></span>
-        <span className="highlights_oldprice">R$ 450,00</span>
-        <span className="highlights_price">R$ 315,00 <br/> 3x R$ 105,00 sem juros</span>
-      </div>
+      {
+        Object.values(products).map(product => (
+          <HighlithsCard
+            name={product.name}
+            oldprice={Number(product.oldprice)}
+            price={Number(product.newprice)}
+            image={product.image}
+          />
+        ))
+      }
     </div>
   );
 }
