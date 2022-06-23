@@ -1,6 +1,5 @@
 .highlights {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 1.2rem;
   align-items: center;
   justify-content: center;
@@ -9,6 +8,7 @@
 
 @media (max-width: 475px) {
   .highlights {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
   }

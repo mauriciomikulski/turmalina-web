@@ -19,6 +19,12 @@ const products = {
     newprice: 315,
     image: prod1,
   },
+  prod4: {
+    name: 'Colar Smiley Rosa',
+    oldprice: 450,
+    newprice: 315,
+    image: prod1,
+  },
 }
 
 //const products = [ prod1 ];

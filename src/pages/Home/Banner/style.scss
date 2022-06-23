@@ -3,10 +3,12 @@
   justify-content: center;
   align-items: end;
   margin: 0 auto;
+  padding-top: 100px;
 }
 
 .banner img {
-  max-width: 823px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .dotItem {
@@ -38,7 +40,7 @@
     display: flex;
   }
   .banner img {
-    width: 50%;
+    width: 100%;
   }
 
   .dotItem {

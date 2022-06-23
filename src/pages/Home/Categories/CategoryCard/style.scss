@@ -24,8 +24,9 @@
 
 @media (max-width: 475px) {  
   .categories .categories__item {
-    display: flex;
+    display: s;
     cursor: pointer;
+    width: 40vw;
   }
   .categories .categories__item img {
     width: 100%;

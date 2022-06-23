@@ -1,35 +1,50 @@
 .search-input {
-  display: flex;
   position: relative;
-  align-items: center;
+  transition: all 0.3s ease;
+  
+  .input-box {
+    position: relative;
+    width: 350px;
+    height: 40px;
+    border-top: 0px solid var(--background-color-dark);
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--background-color-dark);
+    background-color: var(--background-color);
+    color: var(--text-color) !important;
+    padding: 0 10px;
+    font-size: 14px;
+    outline: none;
+
+    &::placeholder {
+      color: var(--text-color)!important;
+    }
+  
+    &.focus {
+      box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .search-button {
+    position: absolute;
+    right: 2vh;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: var(--background-color);
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: calc(10px + 2vmin);
+  }
+  
 }
 
-.input-box {
-  width: 358px;
-  height: 31px;
-  border: 1px solid #ccc;
-  background-color: #C4C4C4;
-  border-radius: 5px;
-  padding: 0 10px;
-  font-size: 14px;
-  outline: none;
-}
 
-.search-button {
-  position: absolute;
-  right: 2vh;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 25px;
-  height: 25px;
-  border: none;
-  background: #C4C4C4;
-  color: #fff;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  font-size: calc(10px + 2vmin);
-}
+
 
 @media (max-width: 475px) {
   .search-input {

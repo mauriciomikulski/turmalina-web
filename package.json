@@ -8,10 +8,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.9",
     "@types/react-icons": "^3.0.0",
     "@types/sass": "^1.43.1",
     "better-react-carousel": "^1.1.1",
     "flat-carousel": "^0.0.1",
+    "graphql": "^16.5.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.4.0",

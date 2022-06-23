@@ -1,20 +1,21 @@
 .conditions {  
   background-color: var(--background-color-dark);
-  margin-top: 20px;
+  padding: 20px 0;
+  width: 100%;
 }
-
-.conditions_container {
+.conditions .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  list-style: none;
-  color: var(--text-color);
-  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 823px;
 }
 
-.conditions_container li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.conditions .container .conditions_content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: center; 
+  color: var(--text-color);
+  padding: 0 10px;
 }
 
 .conditions-title {
@@ -38,18 +39,27 @@
 
 @media screen and (max-width: 475px) {
   .conditions{
+    position: relative;
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    width: clamp(100%, 100%, 100%);
+    width: 415px;
   }
   
-  .conditions_container {
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 10px;
+  .conditions .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .conditions_container li {
+  .conditions .container .conditions_content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conditions .container .conditions_content li {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +67,7 @@
     padding: 0 300px;
   }
   
-  .conditions-description {
+  .conditions .container .conditions_content .conditions-description {
     font-family: var(--font-family-ibm-plex);
     font-style: normal;
     font-weight: var(--font-weight-400);

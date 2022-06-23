@@ -5,9 +5,11 @@ import { CategoryCard } from './CategoryCard'
 const Categories = () => {
   return (
     <div className="categories">
-      {
-        Object.values(categories).map(key => { return <CategoryCard name={key.name} image={key.img} /> })
-      }
+      <div className="container">
+        {
+          Object.values(categories).map(key => { return <CategoryCard name={key.name} image={key.img} /> })
+        }
+      </div>
     </div>
   )
 }
